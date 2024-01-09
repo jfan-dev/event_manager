@@ -1,5 +1,6 @@
 require 'csv'
 
+
 def clean_zipcode(zipcode)
   zipcode.to_s.rjust(5, '0')[0..4]
 end
@@ -7,6 +8,7 @@ end
 puts ''
 puts 'Event Manager Initialized!'
 puts ''
+
 
 contents = CSV.open(
   'event_attendees.csv',
